@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "${mod_id}",
+	"version": "${version}",
+	"name": "${mod_name}",
+	"description": "${description}",
+	"authors": ["${mod_author}"],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/not-so-hardcore",
+		"sources": "https://github.com/nicochart/NotSoHardcore"
+	},
+	"license": "${license}",
+	"icon": "assets/notsohardcore/not_so_hardcore.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["fr.factionbedrock.notsohardcore.NotSoHardcoreFabric"],
+		"client": ["fr.factionbedrock.notsohardcore.NotSoHardcoreFabric"]
+	},
+	"accessWidener" : "notsohardcore.classtweaker",
+	"mixins": [
+		"notsohardcore.mixins.json",
+		"notsohardcore.fabric.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=${fabric_loader_version}",
+		"minecraft": "~${minecraft_version}",
+		"java": ">=${java_version}",
+		"fabric-api": "*"
+	}
+}
